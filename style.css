@@ -1,0 +1,56 @@
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    width: 50;
+    height: 50;
+    border: 2px solid blue;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header {
+    position: fixed; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Los elementos del contenedor se envian hacia los lados */
+    align-items: right;
+    background-color: var(--background-principal);
+    padding: 0 0.15rem 0 40rem; /*TOP: 0px RIGHT: 8px BOTTOM: 0px RIGHT: 32px*/
+  
+
+}
+
+.header h1 {
+    color: var(--color-letra)
+}
+
+.header .navbar {
+    display: flex;
+    flex-direction: right;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: right;
+    height: 100%;
+    width: 75vw;
+    padding: 5rem;;
+}
+
+.boton-whatsapp{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.boton-whatsap img {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    width: 100vw;
+    
+}
