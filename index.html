@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="imagen_logo/iphone-reverso (2).png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de dispostivos mobiles</title>
     <meta name="description" content="En esta tienda encotrarás el dispositivo mobil deseado">.
     <link rel="icon" type="image/png" href="https://images.vexels.com/media/users/3/299508/isolated/preview/7ac3f55a2ac260f1a704eb1b2e4c2a90-a-cono-de-un-tela-fono-con-un-altavoz.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer> </script>
+    <link rel="stylesheet" href="modal.css">
+    <script src="main.js" type="module"> </script>
+    
 </head>
 <body>
 
@@ -25,21 +28,23 @@
           <!--Diseño del header-->
     <header class="header">
         <div class="contenedor-imagen">
-            <img class="logo" src="imagen logo/iphone-reverso (2).png" alt="img-página"> 
+            <img class="logo" src="imagen_logo/iphone-reverso (2).png" alt="img-página"> 
             <h2>MobileBuy</h2>
         </div>
 
 
         <nav class="navbar">
-            <a href="#seccion-uno" class="link" target="_blank">Home
+            <a href="#seccion-uno" class="link">Home
             </a>
-            <a href="#seccion-dos" class="link" target="_blank"> Servicios   
+            <a href="#seccion-dos" id="secc2" class="link oculto"> Servicios   
             </a>
-            <a href="#seccion-tres" class="link" target="_blank"> Colaboradores 
+            <a href="#seccion-tres" id="secc3" class="link oculto"> Colaboradores 
             </a>
-            <a href="#footer" class="link" target="_blank"> 
-                <img src="imagen logo/flecha-hacia-abajo.png" alt=""> 
+            <a href="#footer" class="link"> 
+                <img src="imagen_logo/flecha-hacia-abajo.png" alt=""> 
             </a>
+            <button class="boton_vermas">Ver más...</button> 
+            
 
 
         </nav>
@@ -47,7 +52,7 @@
     
     
 
-    <section class="seccion-uno">
+    <section id= "seccion-uno"class="seccion-uno">
 
         <div> 
             <h1 class="titulo-s1">
@@ -73,49 +78,15 @@
         
       
 
-        <section class="seccion-dos">
+        <section id="seccion-dos"class="oculto seccion-dos">
         
             <h1 class="titulo-s2">Servicios</h1>
 
     
-        <div class="contenedor-cuadros-1">
+        <div class="cuadros_2">
 
     
-     
-            
-                  
-                
-    
-                <div class="sub-1">
-                    <h1 class="titulo s2">Reparación de dispositivos</h1>
-                     <p>Proporcionamos servicios de reparación, incluyendo la reparación de pantallas, reemplazo de baterías, solución de problemas de software y hardware, y reparación de daños por agua.</p>
         
-                </div>
-            </div>
-    
-            <div class="cuadros-2">
-    
-                <div class="sub-2">
-                    <h1 class="titulo s2">Servicio al cliente</h1>
-                     <p>Ofrecemos un canal de atención al cliente para resolver consultas, proporcionar soporte técnico y ayudar a los usuarios con problemas relacionados con dispositivos móviles.</p>
-        
-                </div>
-                  
-                <div class="sub-2">
-                    <h1 class="titulo s2">Asesoramiento y guías</h1>
-                     <p"> guías y tutoriales para ayudar a los usuarios a configurar sus dispositivos, transferir datos, resolver problemas comunes y optimizar el rendimiento.</p>
-        
-                </div>
-    
-                <div class="sub-2">
-                    <h1 class="titulo s2">Comparación de dispositivos</h1>
-                     <p>Ofrecemos herramientas para comparar las especificaciones y características de diferentes dispositivos móviles, lo que ayuda a los usuarios a tomar decisiones informadas.</p>
-        
-                </div>
-    
-    
-            </div>
-    
         </div>
 
    
@@ -124,46 +95,23 @@
           </section>
       
 
-    <section class="seccion-tres">
-        <div>
+    <section id="seccion-tres"class="oculto seccion-tres">
+        
 
             <h1 class="titulo-s3">Colaboradores</h1>
 
-            <div class="contenedor-cuadros-2">
+            <div class="contenedor-cuadros-2"> </div>
+
+           
     
-    
-                <div class="sub-3">
-                    <h1 class="nombre-s3">Juan Esteban Castaño López</h1>
-                     <img src="imagen logo/Juan.jpg" alt="">
-                     <h3 class="descrip">Vendedor</h3>
-        
-                </div>
-                  
-                <div class="sub-3">
-                    <h1 class="nombre-s3">Miguel Francisco Betancourt</h1>
-                      <img src="imagen logo/miguel.jpg" alt="">
-                      <h3 class="descrip">Técnico</h3>
-        
-                </div>
-    
-                <div class="sub-3">
-                    <h1 class="nombre-s3">Juliana Vanessa Alvarez</h1>
-                      <img src="imagen logo/vanessa.jpg" alt="">
-                      <h3 class="descrip">Asesora</h3>
-        
-                </div>
-            </div>
-    
-    
-            </div>
     
     
 
-        </div>
+        
         
     </section>
 
-    <footer>
+    <footer id="footer">
 
         <div class="f-p">
             <p>
@@ -173,7 +121,7 @@
 
         <nav class="nav-2">
             <a href="#seccion-uno" class="link">
-            <img src="imagen logo/up-arrow.png">
+            <img src="imagen_logo/up-arrow.png">
             </a>
         </nav>
     
